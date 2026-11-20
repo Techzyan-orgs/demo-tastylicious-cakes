@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tastylicious Cakes · Kolkata</title>
+  <meta name="description" content="Tastylicious Cakes — freshly baked cakes, cupcakes and pastries in Kolkata. Order online or straight on WhatsApp." />
+  <meta name="theme-color" content="#FFF6E9" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Pacifico&family=Caveat:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=25" />
+</head>
+<body>
+
+<!-- ============ Doodle sprite (whisk, rolling pin, cupcake, star, swirl, heart) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="d-whisk" viewBox="0 0 64 160"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M32 96 C6 70 8 18 32 6 C56 18 58 70 32 96Z"/><path d="M32 96 C18 70 20 24 32 8 C44 24 46 70 32 96Z"/><path d="M32 8V96"/><rect x="26" y="96" width="12" height="58" rx="6"/></g></symbol>
+    <symbol id="d-pin" viewBox="0 0 200 50"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><rect x="40" y="10" width="120" height="30" rx="15"/><path d="M40 25H8M160 25h32"/><circle cx="8" cy="25" r="5"/><circle cx="192" cy="25" r="5"/><path d="M60 18c10 0 20 2 30 0"/></g></symbol>
+    <symbol id="d-cupcake" viewBox="0 0 100 110"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M20 60 L30 104 H70 L80 60Z"/><path d="M38 62 L42 104M50 62V104M62 62 L58 104"/><path d="M14 60 C8 46 22 38 30 42 C28 28 44 22 50 30 C56 18 76 24 72 40 C84 38 92 52 86 60Z"/><path d="M50 30 C50 22 56 16 60 14"/><circle cx="62" cy="12" r="4"/></g></symbol>
+    <symbol id="d-star" viewBox="0 0 50 50"><path d="M25 3l6 15 16 1-12 10 4 16-14-9-14 9 4-16L3 19l16-1z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></symbol>
+    <symbol id="d-swirl" viewBox="0 0 160 80"><path d="M4 60 C20 10 50 10 52 40 C54 70 20 66 34 40 C48 14 80 10 86 40 C92 70 60 66 74 40 C88 14 120 10 126 40 C130 60 146 64 156 50" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></symbol>
+    <symbol id="d-heart" viewBox="0 0 60 54"><path d="M30 50 C10 36 2 26 4 15 C6 4 22 0 30 14 C38 0 54 4 56 15 C58 26 50 36 30 50Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<!-- =============================== NAVBAR =============================== -->
+<header class="nav" id="top">
+  <div class="nav-inner">
+    <a class="logo" href="#top" aria-label="Tastylicious Cakes — home">
+      <span class="logo-1">Tastylicious</span><span class="logo-2">Cakes</span>
+    </a>
+
+    <nav class="nav-tiles" aria-label="Shop by category">
+      <a class="tile" href="#menu" data-filter="cakes">
+        <div class="imgbox" data-slug="nav-cakes"><img alt="" /></div>
+        <span class="tile-label">Cakes</span>
+      </a>
+      <a class="tile" href="#menu" data-filter="cupcakes">
+        <div class="imgbox" data-slug="nav-cupcakes"><img alt="" /></div>
+        <span class="tile-label">Cupcakes</span>
+      </a>
+      <a class="tile" href="#menu" data-filter="pastries">
+        <div class="imgbox" data-slug="nav-pastries"><img alt="" /></div>
+        <span class="tile-label">Pastries</span>
+      </a>
+      <a class="tile tile-croissant" href="#bake-better" aria-label="#BakeTheWorldBetter — our giving initiative">
+        <div class="croissant-css" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="croissant-art">
+          <div class="imgbox" data-slug="nav-croissant" data-compact><img alt="" /></div>
+          <svg class="icing-text" viewBox="0 0 760 479" aria-hidden="true">
+            <path id="arc-nav" d="M88 318 Q380 40 676 318" fill="none"/>
+            <use href="#arc-nav" class="icing-band"/>
+            <use href="#arc-nav" class="icing-band-hi"/>
+            <text><textPath href="#arc-nav" startOffset="50%" text-anchor="middle" textLength="600" lengthAdjust="spacingAndGlyphs">#BakeTheWorldBetter</textPath></text>
+          </svg>
+        </div>
+      </a>
+    </nav>
+
+    <nav class="nav-links" aria-label="Main">
+      <a href="#story">Our<br/>Story</a>
+      <a href="#custom">Custom<br/>Orders</a>
+      <a href="#locations">Loca&shy;tions</a>
+      <a href="#contact">Contact<br/>Us</a>
+    </nav>
+
+    <button class="cart-btn" id="cart-open" aria-label="Open your sweet basket">
+      <!-- shows assets/img/cake-box.png when present (see IMAGES['cake-box'] in js/products.js); basket is the fallback -->
+      <img class="cart-img" id="cart-img" src="assets/img/cart-basket.png" alt="" width="200" height="209" />
+      <span>Cart</span>
+      <b class="badge" id="cart-badge">0</b>
+    </button>
+
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
+  </div>
+
+  <!-- mobile drop sheet -->
+  <div class="m-sheet" id="m-sheet" hidden>
+    <a href="#menu" data-filter="cakes">🎂 Cakes</a>
+    <a href="#menu" data-filter="cupcakes">🧁 Cupcakes</a>
+    <a href="#menu" data-filter="pastries">🍰 Pastries</a>
+    <a href="#cake-lab">🧪 Build-a-Cake Lab</a>
+    <a href="#custom">✏️ Custom Orders</a>
+    <a href="#story">📖 Our Story</a>
+    <a href="#bake-better">🥐 #BakeTheWorldBetter</a>
+    <a href="#locations">📍 Locations</a>
+    <a href="#contact">💌 Contact Us</a>
+    <a class="m-wa" href="#" data-wa="Hi Tastylicious Cakes! I'd like to place an order 🎂">Order on WhatsApp</a>
+  </div>
+</header>
+
+<main>
+
+<!-- =============================== HERO =============================== -->
+<section class="hero" aria-label="Welcome">
+  <div class="blob blob-pink" aria-hidden="true"></div>
+  <div class="blob blob-biscuit" aria-hidden="true"></div>
+  <div class="blob blob-peach" aria-hidden="true"></div>
+  <div class="sprinkle-field" id="sprinkles" aria-hidden="true"></div>
+
+  <div class="hero-grid wrap">
+    <div class="hero-stage">
+      <svg class="doodle hd1" aria-hidden="true"><use href="#d-star"/></svg>
+      <svg class="doodle hd2" aria-hidden="true"><use href="#d-star"/></svg>
+      <svg class="doodle hd3" aria-hidden="true"><use href="#d-swirl"/></svg>
+      <div class="burst burst-l" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="burst burst-r" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+      <div class="stand">
+        <div class="stand-cakes" id="hero-cakes">
+          <div class="hero-cake is-active"><div class="imgbox" data-slug="hero-1"><img alt="Pastel macaron drip cake" /></div></div>
+          <div class="hero-cake"><div class="imgbox" data-slug="hero-2"><img alt="Dark chocolate ganache cake" /></div></div>
+          <div class="hero-cake"><div class="imgbox" data-slug="hero-3"><img alt="Nolen gur caramel cake" /></div></div>
+        </div>
+        <div class="stand-plate" aria-hidden="true"></div>
+        <div class="stand-neck" aria-hidden="true"></div>
+        <div class="stand-foot" aria-hidden="true"></div>
+      </div>
+      <div class="hero-caption" id="hero-caption">
+        <b>Party Sprinkles &amp; Drips</b><span>our signature since 2015</span>
+      </div>
+      <div class="hero-dots" id="hero-dots" role="tablist" aria-label="Featured cakes">
+        <button class="is-active" aria-label="Cake 1"></button><button aria-label="Cake 2"></button><button aria-label="Cake 3"></button>
+      </div>
+    </div>
+
+    <div class="hero-copy">
+      <p class="kicker">Baking Everyday Magic!</p>
+      <h1 class="drip-word" aria-label="Tastylicious Cakes">
+        <span class="dw-line">Tastylicious</span>
+        <span class="dw-line">Cakes<span class="drips" aria-hidden="true"><i style="--x:7%;--h:34px;--d:.1s"></i><i style="--x:24%;--h:20px;--d:.5s"></i><i style="--x:44%;--h:46px;--d:.3s"></i><i style="--x:63%;--h:18px;--d:.8s"></i><i style="--x:80%;--h:36px;--d:.2s"></i></span></span>
+      </h1>
+      <p class="lede">From custom birthday wonders to everyday sweet cravings — baked fresh every single morning, right here in Kolkata.</p>
+      <div class="hero-cta">
+        <a href="#menu" class="btn-cookie">Order Now</a>
+        <a href="#" class="btn-wa" data-wa="Hi Tastylicious Cakes! I'd like to order a cake 🎂">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.4 6.4 0 0 0 1.3 3.4 14.6 14.6 0 0 0 5.6 5c2.1.9 2.9 1 4 .8a3.4 3.4 0 0 0 2.2-1.6 2.8 2.8 0 0 0 .2-1.6c-.1-.1-.3-.2-.6-.4z"/></svg>
+          Order on WhatsApp
+        </a>
+      </div>
+      <ul class="hero-facts">
+        <li><b>4.9★</b> on 2,300+ reviews</li>
+        <li><b>3</b> outlets in Kolkata</li>
+        <li><b>Same-day</b> delivery</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- =============================== PROMO STRIP =============================== -->
+<section class="promo-strip" aria-label="What's new">
+  <a class="promo promo-oven" href="#menu" data-filter="cakes">
+    <div class="imgbox" data-slug="promo-oven"><img alt="Triple chocolate drip cake" /></div>
+    <span class="ribbon">New in the Oven</span>
+    <b>Triple Chocolate Drip</b>
+  </a>
+  <a class="promo promo-celebrate" href="#custom">
+    <svg class="doodle" aria-hidden="true"><use href="#d-cupcake"/></svg>
+    <svg class="doodle" aria-hidden="true"><use href="#d-whisk"/></svg>
+    <svg class="doodle" aria-hidden="true"><use href="#d-star"/></svg>
+    <strong>Celebrate<br/>With Us!</strong>
+    <small>Birthdays · Annaprashan · Weddings · Office parties</small>
+  </a>
+  <a class="promo promo-outlet" href="#locations">
+    <div class="donut-ring"><div class="imgbox" data-slug="promo-outlet"><img alt="Chocolate cupcake" /></div></div>
+    <div><b>Naktala &amp; Jadavpur<br/>Outlets Now Open!</b><span>30+ varieties, always fresh!</span></div>
+  </a>
+</section>
+
+<!-- =============================== MENU =============================== -->
+<section class="menu" id="menu">
+  <svg class="doodle md1" aria-hidden="true"><use href="#d-swirl"/></svg>
+  <svg class="doodle md2" aria-hidden="true"><use href="#d-cupcake"/></svg>
+  <svg class="doodle md3" aria-hidden="true"><use href="#d-heart"/></svg>
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <h2 class="choco-title">Our Magical Creations</h2>
+      <p>Freshly baked, hand-decorated, and ready to make your celebration sweet!</p>
+    </header>
+
+    <div class="chips reveal" role="tablist" aria-label="Filter menu">
+      <button class="chip is-active" data-chip="all">✨ All treats</button>
+      <button class="chip" data-chip="cakes">🎂 Cakes</button>
+      <button class="chip" data-chip="cupcakes">🧁 Cupcakes</button>
+      <button class="chip" data-chip="pastries">🍰 Pastries</button>
+      <button class="chip" data-chip="eggless">🌱 Eggless available</button>
+    </div>
+
+    <div class="menu-grid" id="menu-grid"></div>
+  </div>
+</section>
+
+<!-- =============================== CAKE LAB (builder) =============================== -->
+<section class="lab" id="cake-lab">
+  <svg class="drip-edge" viewBox="0 0 1440 90" preserveAspectRatio="xMidYMin slice" aria-hidden="true"><path class="drip-path" fill="currentColor"/></svg>
+  <div class="wrap lab-grid">
+    <div class="lab-stage reveal">
+      <p class="lab-kicker">The Cake Lab</p>
+      <h2>Build-a-Cake, live!</h2>
+      <div class="turntable">
+        <svg id="lab-svg" viewBox="0 0 340 360" role="img" aria-label="Preview of your custom cake"></svg>
+      </div>
+      <div class="lab-slice" aria-hidden="true">
+        <span>Cross-section peek</span>
+        <svg id="lab-slice" viewBox="0 0 120 80"></svg>
+      </div>
+    </div>
+
+    <form class="lab-card reveal" id="lab-form" onsubmit="return false">
+      <div class="lab-row">
+        <span class="lab-label">1 · Tiers</span>
+        <div class="seg" data-opt="tiers">
+          <button type="button" data-v="1" class="is-on">1 tier<small>1 kg</small></button>
+          <button type="button" data-v="2">2 tiers<small>2.5 kg</small></button>
+          <button type="button" data-v="3">3 tiers<small>4 kg</small></button>
+        </div>
+      </div>
+      <div class="lab-row">
+        <span class="lab-label">2 · Sponge</span>
+        <div class="seg seg-wrap" data-opt="sponge"></div>
+      </div>
+      <div class="lab-row">
+        <span class="lab-label">3 · Frosting colour</span>
+        <div class="swatches" data-opt="frost"></div>
+      </div>
+      <div class="lab-row">
+        <span class="lab-label">4 · Drip</span>
+        <div class="swatches" data-opt="drip"></div>
+      </div>
+      <div class="lab-row">
+        <span class="lab-label">5 · Topper</span>
+        <div class="seg seg-wrap" data-opt="topper"></div>
+      </div>
+      <div class="lab-row">
+        <span class="lab-label">6 · Cake topper <small class="lab-hint">real gold topper · +₹150</small></span>
+        <div class="seg seg-wrap" data-opt="occasion"></div>
+      </div>
+      <div class="lab-row">
+        <label class="lab-label" for="lab-name">7 · Name on top <small class="lab-hint">piped in cream · up to 12 letters</small></label>
+        <input id="lab-name" maxlength="12" placeholder="e.g. Mini" autocomplete="off" />
+      </div>
+      <div class="lab-total">
+        <div><small>Your creation</small><b id="lab-price">₹0</b></div>
+        <div class="lab-actions">
+          <button type="button" class="btn-cookie" id="lab-add">Add to Bag</button>
+          <button type="button" class="btn-wa sm" id="lab-wa">Send design on WhatsApp</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <svg class="drip-edge bottom" viewBox="0 0 1440 90" preserveAspectRatio="xMidYMin slice" aria-hidden="true"><path class="drip-path" fill="currentColor"/></svg>
+</section>
+
+<!-- =============================== CUSTOM ORDERS =============================== -->
+<section class="custom" id="custom">
+  <svg class="doodle cd1" aria-hidden="true"><use href="#d-pin"/></svg>
+  <svg class="doodle cd2" aria-hidden="true"><use href="#d-whisk"/></svg>
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <h2 class="choco-title">Design Your Dream Cake!</h2>
+      <p>From birthdays to weddings, tell us your vision and let's bake it happen.</p>
+    </header>
+    <div class="custom-grid">
+      <form class="parchment reveal" id="custom-form">
+        <h3>Bake Your Vision</h3>
+        <div class="f-grid">
+          <label>Name<input name="name" required placeholder="What should we call you?" autocomplete="name" /></label>
+          <label>Phone<input name="phone" type="tel" required placeholder="10-digit mobile" autocomplete="tel" pattern="[0-9+\s-]{10,15}" /></label>
+          <label>Event date<input name="date" type="date" required /></label>
+          <label>Guests to feed
+            <select name="guests"><option>10–20</option><option>20–50</option><option>50–100</option><option>100+</option></select>
+          </label>
+          <label class="full">Occasion
+            <select name="occasion"><option>Birthday</option><option>Wedding / Reception</option><option>Anniversary</option><option>Annaprashan / Baby shower</option><option>Corporate</option><option>Just because!</option></select>
+          </label>
+          <label class="full">Describe your cake dreams
+            <textarea name="desc" rows="4" placeholder="Themes, colours, flavours, eggless?…"></textarea>
+          </label>
+        </div>
+        <p class="inspo">📸 Got inspo pictures or sketches? Send them in the same WhatsApp chat after you tap below.</p>
+        <button class="btn-gingerbread" type="submit">Get a Quote on WhatsApp</button>
+      </form>
+
+      <div class="journey reveal">
+        <h3>The Journey of a Custom Cake <span aria-hidden="true">↷</span></h3>
+        <div class="book">
+          <ol class="steps">
+            <li><b>Step 1 · Tell us your dream</b>Share your idea, date and inspiration on WhatsApp.</li>
+            <li><b>Step 2 · The custom design</b>Our head baker sketches your masterpiece and confirms the quote.</li>
+            <li><b>Step 3 · The baking magic</b>We bake, decorate and deliver it fresh to your door.</li>
+          </ol>
+          <div class="pola-stack">
+            <figure class="pola p1"><div class="imgbox" data-slug="journey-1"><img alt="Three-tier floral wedding cake" /></div></figure>
+            <figure class="pola p2"><div class="imgbox" data-slug="journey-2"><img alt="Colourful kids birthday cake" /></div></figure>
+            <figure class="pola p3"><div class="imgbox" data-slug="journey-3"><img alt="Semi-naked floral cake" /></div></figure>
+            <span class="banner-ribbon">Let's create something unique!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================== OUR STORY =============================== -->
+<section class="story" id="story">
+  <svg class="drip-edge" viewBox="0 0 1440 90" preserveAspectRatio="xMidYMin slice" aria-hidden="true"><path class="drip-path" fill="currentColor"/></svg>
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <h2 class="choco-title">Our Story: Whisking Up Joy!</h2>
+      <p>How a pinch of passion and a dash of magic turned into Tastylicious Cakes.</p>
+    </header>
+    <div class="story-grid">
+      <article class="torn reveal">
+        <h3>The Baker's Journey</h3>
+        <p class="script">How it all began…</p>
+        <p>It started in a tiny home kitchen in Behala, where our founder Mitali spent late nights experimenting with flour, sugar, nolen gur and a whole lot of love. Friends asked for “just one more” — then their friends did too. What began as a weekend hobby became a full-blown obsession with making every celebration unforgettable.</p>
+        <aside class="funfact"><b>Fun fact:</b> our very first cake was a lopsided strawberry delight that still tasted like magic. 🍓</aside>
+        <a href="#contact" class="btn-cookie sm">Meet our bakers</a>
+      </article>
+
+      <ol class="timeline reveal" id="timeline">
+        <svg class="tl-path" viewBox="0 0 100 600" preserveAspectRatio="none" aria-hidden="true"><path id="tl-line" d="M50 0 C10 100 90 200 50 300 C10 400 90 500 50 600"/></svg>
+        <li><span class="tl-ico">🥣</span><b>2015</b>The first mix</li>
+        <li><span class="tl-ico">🏪</span><b>2018</b>Our little shop in Gariahat</li>
+        <li><span class="tl-ico">🛵</span><b>2023</b>Naktala &amp; Jadavpur open</li>
+        <li><span class="tl-ico">❤️</span><b>Today</b>Baking for you!</li>
+      </ol>
+
+      <div class="pola-wall reveal">
+        <figure class="pola w1"><span class="tape"></span><div class="imgbox" data-slug="story-baker"><img alt="Our founder frosting a cake" /></div></figure>
+        <figure class="pola w2"><span class="pin"></span><div class="imgbox" data-slug="story-shop"><img alt="Inside our Gariahat shop" /></div></figure>
+        <figure class="pola w3"><div class="imgbox" data-slug="story-batter"><img alt="Whisking rainbow batter" /></div><figcaption>Pure joy in every batch</figcaption></figure>
+        <span class="banner-ribbon wide">Baked from scratch, every day!</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================== #BAKETHEWORLDBETTER =============================== -->
+<section class="better" id="bake-better">
+  <div class="wrap better-grid">
+    <div class="better-croissant reveal" aria-hidden="true">
+      <div class="croissant-art">
+        <div class="imgbox" data-slug="nav-croissant" data-compact><img alt="" /></div>
+        <svg class="icing-text" viewBox="0 0 760 479">
+          <path id="arc-big" d="M88 318 Q380 40 676 318" fill="none"/>
+          <use href="#arc-big" class="icing-band"/>
+          <use href="#arc-big" class="icing-band-hi"/>
+          <text><textPath href="#arc-big" startOffset="50%" text-anchor="middle" textLength="600" lengthAdjust="spacingAndGlyphs">#BakeTheWorldBetter</textPath></text>
+        </svg>
+      </div>
+    </div>
+    <div class="better-copy reveal">
+      <h2>One cake for you,<br/>one cupcake for a little one.</h2>
+      <p>For every celebration cake you order, we bake a cupcake for a child at our partner shelters across Kolkata. Want to do a little extra? Add a gift cupcake to your basket — we deliver it with a handwritten note.</p>
+      <div class="better-count">
+        <div><b id="gift-count">48,215</b><span>cupcakes gifted so far</span></div>
+        <button class="btn-cookie" id="gift-add">Gift a cupcake · ₹60</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================== LOCATIONS =============================== -->
+<section class="locations" id="locations">
+  <svg class="doodle ld1" aria-hidden="true"><use href="#d-whisk"/></svg>
+  <svg class="doodle ld2" aria-hidden="true"><use href="#d-cupcake"/></svg>
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <h2 class="choco-title">Find Our Sweet Spots!</h2>
+      <p>We're baking everyday magic near you — come on in and smell the sweetness.</p>
+    </header>
+    <div class="loc-grid">
+      <div class="recipe-book reveal">
+        <h3>Select Your Bakery</h3>
+        <ul class="outlets" id="outlets"></ul>
+      </div>
+      <div class="map-frame reveal">
+        <span class="sticker s1">tasty</span><span class="sticker s2">fresh</span>
+        <span class="clip" aria-hidden="true"></span>
+        <iframe id="map" title="Map of Tastylicious Cakes outlets" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=Gariahat%2C%20Kolkata&z=14&output=embed"></iframe>
+        <div class="legend"><b>Map legend</b><span>🧁 Cake studio</span><span>🛵 Delivery base</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================== CONTACT =============================== -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <h2 class="choco-title">Get in Touch with our Bakers!</h2>
+      <p>Drop us a line about your dream cake, a custom order, or just to say hello.</p>
+    </header>
+    <div class="contact-grid">
+      <form class="parchment reveal" id="contact-form">
+        <h3>Send Us a Sweet Message</h3>
+        <div class="f-grid">
+          <label class="full">Name<input name="name" required placeholder="What should we call you?" autocomplete="name" /></label>
+          <label class="full">What's the occasion?
+            <select name="subject"><option>Birthday</option><option>Wedding</option><option>Bulk / corporate order</option><option>Feedback</option><option>Just craving!</option></select>
+          </label>
+          <label class="full">Message<textarea name="msg" rows="5" required placeholder="Tell us your cake dreams…"></textarea></label>
+        </div>
+        <button class="btn-choco" type="submit">Send on WhatsApp</button>
+      </form>
+
+      <div class="visit reveal">
+        <h3>Visit Our Sweet Studio</h3>
+        <p class="v-line">📍 23/1 Gariahat Road (South), Kolkata 700029</p>
+        <p class="v-line">📞 <a href="tel:+917439303013">+91-7439303013</a></p>
+        <div class="hours">
+          <b>Hours</b>
+          <span>Mon – Sat · 9 AM – 10 PM</span>
+          <span>Sunday · 10 AM – 9 PM</span>
+        </div>
+        <div class="v-actions">
+          <a class="btn-cookie sm" href="tel:+917439303013">Call us</a>
+          <a class="btn-wa sm" href="#" data-wa="Hi Tastylicious Cakes! 👋">Chat on WhatsApp</a>
+        </div>
+        <div class="tray">
+          <b>Let's be sweetfriends!</b>
+          <div>
+            <a href="#" aria-label="Instagram (demo)" class="so so-ig"><svg viewBox="0 0 24 24" aria-hidden="true"><defs><radialGradient id="ig-grad" cx="30%" cy="107%" r="150%"><stop offset="0" stop-color="#FDF497"/><stop offset=".05" stop-color="#FDF497"/><stop offset=".45" stop-color="#FD5949"/><stop offset=".6" stop-color="#D6249F"/><stop offset=".9" stop-color="#285AEB"/></radialGradient></defs><path fill="url(#ig-grad)" d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a>
+            <a href="#" aria-label="Facebook (demo)" class="so so-fb"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#0866FF" d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a>
+            <a href="#" aria-label="YouTube (demo)" class="so so-yt"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF0000" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- =============================== FOOTER =============================== -->
+<footer class="footer">
+  <svg class="drip-edge" viewBox="0 0 1440 90" preserveAspectRatio="xMidYMin slice" aria-hidden="true"><path class="drip-path" fill="currentColor"/></svg>
+  <div class="wrap foot-grid">
+    <div>
+      <p class="logo foot-logo"><span class="logo-1">Tastylicious</span><span class="logo-2">Cakes</span></p>
+      <p>Baked with love &amp; delivered fresh across Kolkata.</p>
+      <p><a href="tel:+917439303013">+91-7439303013</a></p>
+    </div>
+    <div>
+      <b>Treats</b>
+      <a href="#menu" data-filter="cakes">Cakes</a><a href="#menu" data-filter="cupcakes">Cupcakes</a><a href="#menu" data-filter="pastries">Pastries</a><a href="#cake-lab">Build-a-Cake</a>
+    </div>
+    <div>
+      <b>Bakery</b>
+      <a href="#story">Our Story</a><a href="#bake-better">#BakeTheWorldBetter</a><a href="#locations">Locations</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+  <details class="wrap credits">
+    <summary>Image credits</summary>
+    <ul>
+      <li>Cake, cupcake, pastry, croissant and basket cut-outs from <a href="https://pngimg.com" target="_blank" rel="noopener">PNGimg.com</a>, licensed <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>.</li>
+      <li>“Happy birthday” acrylic topper, “Happy Anniversary” lettering and “Congrats” balloon bunting from <a href="https://www.pngwing.com" target="_blank" rel="noopener">PNGWing</a> (free for non-commercial use). The anniversary lettering is recoloured.</li>
+      <li>Instagram, Facebook and YouTube logos from <a href="https://simpleicons.org" target="_blank" rel="noopener">Simple Icons</a> (CC0); the brand marks belong to their respective owners.</li>
+      <li>Cake, kitchen and shop photographs are AI-generated for this demo.</li>
+    </ul>
+  </details>
+  <p class="wrap fine">© <span id="year"></span> Tastylicious Cakes · Demo website · Prices in ₹ are illustrative.</p>
+</footer>
+
+<!-- floating cake-box cart -->
+<aside class="fc-wrap" aria-label="Basket quick access">
+  <button type="button" class="fc" id="float-cart" aria-label="Open your sweet basket" title="Your Sweet Basket">
+    <span class="fc-tip" id="fc-tip">Your basket is empty</span>
+    <img class="fc-img" id="fc-img" alt="" />
+    <svg class="fc-bow" viewBox="0 0 60 30" aria-hidden="true"><path d="M30 20 C20 2 4 6 9 17 C13 26 26 22 30 20 C34 22 47 26 51 17 C56 6 40 2 30 20Z" fill="#F6E2C3" stroke="#9E7A4E" stroke-width="1.5"/><path d="M30 20 L23 30 M30 20 L37 30" stroke="#F6E2C3" stroke-width="4" stroke-linecap="round"/><circle cx="30" cy="19" r="4" fill="#FBEEDB" stroke="#9E7A4E" stroke-width="1.5"/></svg>
+    <span class="fc-lid" aria-hidden="true"></span>
+    <span class="fc-box" aria-hidden="true">
+      <span class="fc-ribbon"></span>
+      <span class="fc-brand">Tastylicious</span>
+      <span class="fc-sub">CAKES</span>
+    </span>
+    <b class="fc-badge" id="fc-badge" aria-hidden="true">0</b>
+  </button>
+</aside>
+
+<!-- =============================== CART DRAWER =============================== -->
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="Your sweet basket" aria-hidden="true">
+  <div class="drawer-edge" aria-hidden="true">
+    <svg><use href="#d-whisk"/></svg><svg><use href="#d-pin"/></svg><svg><use href="#d-whisk"/></svg>
+  </div>
+  <div class="drawer-body">
+    <header class="drawer-head">
+      <button class="close-donut" id="cart-close" aria-label="Close basket">✕</button>
+      <h2>Your Sweet Basket</h2>
+      <p id="cart-count">(0 items)</p>
+      <ol class="cart-steps" id="cart-steps"><li class="on">Basket</li><li>Details</li><li>Sent</li></ol>
+    </header>
+    <div class="drawer-scroll" id="cart-items"></div>
+    <footer class="drawer-foot" id="cart-foot"></footer>
+  </div>
+</aside>
+
+<!-- =============================== QUICK VIEW =============================== -->
+<dialog class="qv" id="qv">
+  <button class="close-donut qv-x" data-close aria-label="Close">✕</button>
+  <div class="qv-grid" id="qv-body"></div>
+</dialog>
+
+<!-- =============================== ADD-TO-BAG ANIMATION =============================== -->
+<dialog class="bag-anim" id="bag-anim" aria-labelledby="ba-title">
+  <button class="close-donut ba-x" id="ba-close" aria-label="Close">✕</button>
+  <h3 id="ba-title">Boxing it up for you…</h3>
+  <p id="ba-sub" class="ba-sub"></p>
+
+  <div class="ba-stage" aria-hidden="true">
+    <div class="ba-glow"></div>
+    <div class="ba-box" id="ba-box">
+      <div class="ba-back"></div>
+      <div class="ba-treat" id="ba-treat"><div class="imgbox" id="ba-img"><img alt="" /></div></div>
+      <div class="ba-front">
+        <span class="ba-window"></span>
+        <span class="ba-brand">Tastylicious</span>
+        <span class="ba-sub2">CAKES</span>
+      </div>
+      <div class="ba-lid" id="ba-lid"><span></span></div>
+      <svg class="ba-ribbon" viewBox="0 0 120 184"><path class="rb-v" d="M60 40V78"/><path class="rb-bow" d="M60 40 C40 12 16 20 25 39 C32 53 52 46 60 40 C68 46 88 53 95 39 C104 20 80 12 60 40Z M60 40 L47 70 M60 40 L74 70"/></svg>
+      <div class="ba-particles" id="ba-particles"></div>
+    </div>
+    <div class="ba-shadow"></div>
+  </div>
+
+  <div class="ba-foot" id="ba-foot">
+    <p>Basket now has <b id="ba-count">0</b> item(s) · <b id="ba-total">₹0</b></p>
+    <div class="ba-actions">
+      <button class="btn-ghost" id="ba-continue">Keep browsing</button>
+      <button class="btn-choco" id="ba-view">View basket</button>
+    </div>
+  </div>
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/products.js?v=25"></script>
+<script src="js/app.js?v=25"></script>
+</body>
+</html>
